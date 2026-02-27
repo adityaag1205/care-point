@@ -1,0 +1,422 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Page Background & Layout === */
+body {
+  background: linear-gradient(to bottom, #0a2540, #1e3a8a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Home Wrapper === */
+.home-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* === Navbar === */
+/* === Navbar === */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2540;
+  padding: 15px 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.logo-space img {
+  width: 140px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4fc3f7;
+  transform: scale(1.05);
+}
+
+/* === Footer === */
+.footer {
+  width: 100%;
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+  position:fixed;
+  bottom: 0;
+}
+
+.footer-link {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+
+.home-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px; 
+  width: 600px;
+  background: #0a2540;
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.home-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #c7ef37;
+  margin-bottom: 50px;
+}
+
+.home-description {
+  font-size: 18px;
+  max-width: 80%;
+  margin-bottom: 100px;
+  margin-left: 45px;
+}
+
+/* Button container */
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+}
+
+/* Button Styling */
+.primary-btn, .secondary-btn {
+  width: 45%;
+  padding: 12px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* "I'm a Student" Button */
+.primary-btn {
+  background: #1d4ed8;
+  color: white;
+  border-color: white;
+  border-style:solid;
+}
+
+.primary-btn:hover {
+  background: transparent
+  
+}
+
+/* "Download Reports" Button */
+.secondary-btn {
+  background: #1d4ed8;
+  color: white;
+  border-color: white;
+  border-style:solid;
+}
+
+.secondary-btn:hover {
+  background: transparent;
+}
+
+
+.Form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0a2540, #1d4e89);
+  padding: 20px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.form-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+form {
+  background: #bfdbfe;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+}
+
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+  background-color: #ffeeee;
+}
+
+
+input:focus, select:focus, textarea:focus {
+  border-color: #1d4e89;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(29, 78, 137, 0.3);
+}
+
+
+select {
+  background: #ffeeee;
+}
+
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+
+input[type="file"] {
+  border: none;
+}
+
+
+button {
+  background: #1d4e89;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #163a63;
+}
+
+
+@media (max-width: 500px) {
+  form {
+    width: 90%;
+    overflow: hidden;
+  }
+}
+.Report{
+  margin-top: 50px;
+  background: transparent;
+  width: 400px;
+}
+.selection{
+  margin-top: 40px;
+}
+.btn-fetch{
+  margin-top:40px;
+}
+.val{
+  margin-top: 40px;
+}
+.Heading{
+  color: white;
+}
+.Login{
+  margin-top:40px;
+}
+.Login h2{
+  color: white;
+}
+.Login p{
+  color: white;
+}
+.Login p a{
+  color: white;
+  font-style: italic;
+}
+.Login-Title{
+  margin-bottom: 15px;
+  color: white;
+}
+.acc{
+  margin-top: 15px;
+  color: white;
+}
+
+.signup-link {
+  color: #ffcc00; 
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+  color: #ffd71f; 
+}
+.Signup{
+  margin-top: 40px;
+}
+.Signup h2{
+  color: white;
+}
+.Signup-Heading{
+  margin-bottom: 15px;
+  color: white;
+}
+.Report-Data{
+  margin-top: 15px;
+  margin-bottom: 35px;
+  color: white;
+}
+.Report-Heading{
+  color: white;
+}
+.Pdf{
+  margin-right: 10px;
+}
+.Excel{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Docx{
+  margin-left: 10px;
+}
+.Download{
+  margin-top: 15px;
+  color: white;
+  margin-bottom: 15px;
+}
+.Download-Heading{
+  margin-bottom: 15px;
+}
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.report-table th,
+.report-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+.report-table th {
+  background-color: #f4f4f4;
+  color: black;
+}
+.report-table a {
+  color: blue;
+  text-decoration: underline;
+}
+.report-table1 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.report-table1 th,
+.report-table1 td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.report-table1 th {
+  background-color: #f4f4f4;
+  color: black;
+}
+.report-table1 a {
+  color: blue;
+  text-decoration: underline;
+}
+.page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.reports-container {
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.report-table {
+  margin: 20px auto;
+  width: 90%;
+  border-collapse: collapse;
+  color: black;
+  overflow: hidden;
+}
+
+.report-table th, .report-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.report-table th {
+  background: #0a2540;
+  color: white;
+}
